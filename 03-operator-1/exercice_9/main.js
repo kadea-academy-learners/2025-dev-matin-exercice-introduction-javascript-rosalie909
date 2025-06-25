@@ -27,3 +27,11 @@ let madameMukuna = partParMembreDeuxiemeCategorie;
 let joseph = partParMembreDeuxiemeCategorie;
 let sarah = partParMembreDeuxiemeCategorie;
 
+// Affichage des valeurs numériques seules
+console.log(paul);
+console.log(marie);
+console.log(eric);
+console.log(claire);
+console.log(madameMukuna);
+console.log(joseph);
+console.lo
