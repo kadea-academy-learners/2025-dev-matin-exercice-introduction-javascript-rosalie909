@@ -1,9 +1,6 @@
 name: Autograding Tests
 'on':
-<<<<<<< HEAD
-=======
 - push
->>>>>>> kadea-academy-learners-main
 - workflow_dispatch
 - repository_dispatch
 permissions:
@@ -17,87 +14,6 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-<<<<<<< HEAD
-    - name: test 1
-      id: test-1
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: test 1
-        setup-command: npm install
-        command: npm run test tests/exercice_1.test.js
-        timeout: 10
-        max-score: 1
-    - name: test 2
-      id: test-2
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: test 2
-        setup-command: npm install
-        command: 'npm run test tests/exercice_2.test.js '
-        timeout: 10
-        max-score: 1
-    - name: test 3
-      id: test-3
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: test 3
-        setup-command: npm install
-        command: npm run test tests/exercice_3.test.js
-        timeout: 10
-        max-score: 1
-    - name: test 4
-      id: test-4
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: test 4
-        setup-command: npm install
-        command: npm run test tests/exercice_4.test.js
-        timeout: 10
-        max-score: 1
-    - name: test 5
-      id: test-5
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: test 5
-        setup-command: npm install
-        command: npm run test tests/exercice_5.test.js
-        timeout: 10
-        max-score: 1
-    - name: test 6
-      id: test-6
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: test 6
-        setup-command: npm install
-        command: npm run test tests/exercice_6.test.js
-        timeout: 10
-        max-score: 1
-    - name: test 7
-      id: test-7
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: test 7
-        setup-command: npm install
-        command: npm run test tests/exercice_7.test.js
-        timeout: 10
-        max-score: 1
-    - name: test 8
-      id: test-8
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: test 8
-        setup-command: npm install
-        command: npm run test tests/exercice_8.test.js
-        timeout: 10
-        max-score: 1
-    - name: test 9
-      id: test-9
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: test 9
-        setup-command: npm install
-        command: npm run test tests/exercice_9.test.js
-=======
     - name: test 1a
       id: test-1a
       uses: classroom-resources/autograding-command-grader@v1
@@ -438,25 +354,11 @@ jobs:
         test-name: test 9h
         setup-command: npm install
         command: npm run test tests/exercice_9h.test.js
->>>>>>> kadea-academy-learners-main
         timeout: 10
         max-score: 1
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
-<<<<<<< HEAD
-        TEST-1_RESULTS: "${{steps.test-1.outputs.result}}"
-        TEST-2_RESULTS: "${{steps.test-2.outputs.result}}"
-        TEST-3_RESULTS: "${{steps.test-3.outputs.result}}"
-        TEST-4_RESULTS: "${{steps.test-4.outputs.result}}"
-        TEST-5_RESULTS: "${{steps.test-5.outputs.result}}"
-        TEST-6_RESULTS: "${{steps.test-6.outputs.result}}"
-        TEST-7_RESULTS: "${{steps.test-7.outputs.result}}"
-        TEST-8_RESULTS: "${{steps.test-8.outputs.result}}"
-        TEST-9_RESULTS: "${{steps.test-9.outputs.result}}"
-      with:
-        runners: test-1,test-2,test-3,test-4,test-5,test-6,test-7,test-8,test-9
-=======
         TEST-1A_RESULTS: "${{steps.test-1a.outputs.result}}"
         TEST-1B_RESULTS: "${{steps.test-1b.outputs.result}}"
         TEST-1C_RESULTS: "${{steps.test-1c.outputs.result}}"
@@ -497,4 +399,3 @@ jobs:
         TEST-9H_RESULTS: "${{steps.test-9h.outputs.result}}"
       with:
         runners: test-1a,test-1b,test-1c,test-2a,test-2b,test-2c,test-3a,test-3b,test-3c,test-4a,test-4b,test-5a,test-5b,test-6a,test-6b,test-6c,test-6d,test-6e,test-7a,test-7b,test-7c,test-7d,test-7e,test-8a,test-8b,test-8c,test-8d,test-8e,test-8f,test-8g,test-9a,test-9b,test-9c,test-9d,test-9e,test-9f,test-9g,test-9h
->>>>>>> kadea-academy-learners-main
